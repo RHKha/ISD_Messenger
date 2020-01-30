@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_movies"
+        android:icon="@drawable/ic_movie"
+        android:title="@string/title_movie" />
+    <item
+        android:id="@+id/navigation_tv"
+        android:icon="@drawable/ic_television"
+        android:title="@string/title_tv_show" />
+    <item
+        android:id="@+id/navigation_music"
+        android:icon="@drawable/ic_musical"
+        android:title="@string/title_music" />
+
+    <item
+        android:id="@+id/navigation_games"
+        android:icon="@drawable/ic_games"
+        android:title="@string/title_dashboard" />
+</menu>

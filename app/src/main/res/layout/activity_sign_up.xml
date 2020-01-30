@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/signUpNameEtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name:" />
+
+        <EditText
+            android:id="@+id/signUpEmailEtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signUpNameEtId"
+            android:hint="Email:"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/signUpPhoneEtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signUpEmailEtId"
+            android:hint="Phone:"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/signUpPasswordEtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signUpPhoneEtId"
+            android:hint="Password:"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/signUpBtnId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signUpPasswordEtId"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:text="SignUp"
+            android:textAllCaps="false" />
+
+
+        <TextView
+            android:id="@+id/signInTvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signUpBtnId"
+            android:layout_marginTop="20dp"
+            android:text="Have an account? please " />
+
+        <TextView
+            android:id="@+id/gotoSignupTvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signUpBtnId"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/signInTvId"
+            android:text="@string/signin_tv" />
+
+    </RelativeLayout>
+</RelativeLayout>

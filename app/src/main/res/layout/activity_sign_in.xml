@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignInActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp">
+
+
+        <EditText
+            android:id="@+id/signInEmailEtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email or Phone:"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/signInPasswordEtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signInEmailEtId"
+            android:hint="Password:"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/signInBtnId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signInPasswordEtId"
+            android:layout_alignParentRight="true"
+            android:text="Sign In"
+            android:textAllCaps="false" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/signInWithGoogleBtnId"
+            android:layout_width="140dp"
+            android:layout_height="68dp"
+            android:layout_below="@+id/signInBtnId"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="133dp"
+            android:text="Sign In"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/signInTvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signInPasswordEtId"
+            android:layout_marginTop="20dp"
+            android:text="Have no account? please " />
+
+        <TextView
+            android:id="@+id/gotoSignupTvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signInPasswordEtId"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/signInTvId"
+            android:layout_toRightOf="@+id/signInTvId"
+            android:text="@string/sign_up_tv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Email or Password?"
+            android:id="@+id/forgotEmailorPasswordTvId"
+            android:layout_below="@+id/signInWithGoogleBtnId"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="40dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

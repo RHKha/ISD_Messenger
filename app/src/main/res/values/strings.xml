@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ISDMessenger</string>
+
+    <string name="signin_tv"><u> Sign In</u></string>
+    <string name="sign_up_tv"><u>Sign Up</u></string>
+    <string name="title_home">Home</string>
+    <string name="title_dash_board">Dash Board</string>
+    <string name="title_profile">Profile</string>
+</resources>
