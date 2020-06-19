@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.isdmessenger">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,8 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.GroupChatActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".activity.ChatActivity"></activity>
+        <activity android:name=".activity.ProfileActivity" />
+        <activity
+            android:name=".activity.FindFriendsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".activity.PhoneLoginActivity" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activity.GroupChatActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".activity.SignInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +31,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.SignUpActivity"></activity>
+        <activity android:name=".activity.SignUpActivity" />
     </application>
 
 </manifest>

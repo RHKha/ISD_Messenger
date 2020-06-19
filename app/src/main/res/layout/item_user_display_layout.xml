@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/usersProfileImageId"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_person_24dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_toEndOf="@+id/usersProfileImageId"
+        android:layout_toRightOf="@+id/usersProfileImageId">
+
+        <ImageView
+            android:id="@+id/activeUserIconIvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_active_24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"/>
+
+
+        <LinearLayout
+            android:id="@+id/userInfoLinearLayoutId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="24dp"
+            android:layout_marginEnd="24dp">
+
+            <TextView
+                android:id="@+id/displayUsersNameTvId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user_name"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/displayUsersStatusTvId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/user_status" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userInfoLinearLayoutId"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/requestAcceptBtnId"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="#388E3C"
+                android:text="@string/accept"
+                android:textAllCaps="false"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/requestCancelBtnId"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:background="#D32F2F"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -4,6 +4,7 @@ public class User {
     String userId;
     String userImg;
     String userName;
+    String userStatus;
     String userPhone;
     String userEmail;
     String userDoB;
@@ -81,6 +82,10 @@ public class User {
         this.userEduInstitute = userEduInstitute;
     }
 
+    public void setUserStatus(String userStatus) {
+        this.userStatus = userStatus;
+    }
+
     public void setUserAddress(String userAddress) {
         this.userAddress = userAddress;
     }
@@ -123,5 +128,9 @@ public class User {
 
     public String getUserAddress() {
         return userAddress;
+    }
+
+    public String getUserStatus() {
+        return userStatus;
     }
 }

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SettingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settingsProfileCIVId"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/ic_person_24dp"
+        app:civ_border_color="#FFA000"
+        app:civ_border_width="5dp" />
+
+    <EditText
+        android:id="@+id/setUserNameEtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settingsProfileCIVId"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint="User Name"
+        android:inputType="textImeMultiLine"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:padding="6dp"/>
+    <EditText
+        android:id="@+id/setUserStatusEtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setUserNameEtId"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint="User Status"
+        android:inputType="textImeMultiLine"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:padding="6dp"/>
+    <Button
+        android:id="@+id/updateSettingBtnId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setUserStatusEtId"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Update"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:background="#FFA000"
+        android:layout_marginTop="20dp"
+        android:padding="6dp"/>
+
+
+
+</RelativeLayout>

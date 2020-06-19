@@ -3,13 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.ChatFragment">
+    tools:context=".activity.FindFriendsActivity">
+
+    <include
+        android:id="@+id/find_friend_toolbar"
+        layout="@layout/item_app_bar_layout" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/chatMessageListRv"
+        android:id="@+id/findFriendsRvId"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/find_friend_toolbar"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true" />
+        android:layout_centerVertical="true" />
+
 </RelativeLayout>
